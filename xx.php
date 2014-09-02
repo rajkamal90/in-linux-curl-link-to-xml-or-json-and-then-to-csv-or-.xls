@@ -20,7 +20,7 @@ function char($parser,$data)
 
 xml_set_character_data_handler($parser,"char");
 $fp=fopen("....path/xxx.xml","r");// path to your file
-echo ',custid,issued,valid,span,offset,ptu,F50,F10,F90';
+echo ',your header coulumns name put here seperated by coulumns';
 while ($data=fread($fp,4096))
   {
   xml_parse($parser,$data,feof($fp)) or
